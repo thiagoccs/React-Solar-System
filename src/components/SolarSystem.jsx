@@ -9,7 +9,11 @@ export default class SolarSystem extends Component {
     return (
       <div data-testid="solar-system">
         <Title headline="Planetas" />
-        { Planets.map((planet, index) => <PlanetCard info={ planet } key={ index } />)}
+        {Planets.map((planet, index) => (<PlanetCard
+          planetImage={ planet.image }
+          planetName={ planet.name }
+          key={ index }
+        />))}
       </div>
     );
   }

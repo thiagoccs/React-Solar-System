@@ -8,7 +8,13 @@ export default class Missions extends Component {
     return (
       <div data-testid="missions">
         <Title headline="Missões" />
-        {missions.map((mission, index) => <MissionCard info={ mission } key={ index } />)}
+        {missions.map((mission, index) => (<MissionCard
+          name={ mission.name }
+          year={ mission.year }
+          country={ mission.country }
+          destination={ mission.destination }
+          key={ index }
+        />))}
       </div>
     );
   }
