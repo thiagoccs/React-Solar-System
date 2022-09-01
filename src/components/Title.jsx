@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class Title extends Component {
   render() {
-    console.log(this);
+    // console.log(this);
     const { headline } = this.props;
     return (
       <div>
